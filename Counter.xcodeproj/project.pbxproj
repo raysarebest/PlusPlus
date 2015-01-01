@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CC4692B1A4A87270071E984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4692A1A4A87270071E984 /* AppDelegate.swift */; };
-		4CC4692D1A4A87270071E984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4692C1A4A87270071E984 /* ViewController.swift */; };
+		4CA85F171A4CA3AE0014848C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC4694A1A4B30460071E984 /* iAd.framework */; };
+		4CC4692B1A4A87270071E984 /* MHAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4692A1A4A87270071E984 /* MHAppDelegate.swift */; };
+		4CC4692D1A4A87270071E984 /* MHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4692C1A4A87270071E984 /* MHViewController.swift */; };
 		4CC469301A4A87270071E984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4692E1A4A87270071E984 /* Main.storyboard */; };
 		4CC469321A4A87270071E984 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC469311A4A87270071E984 /* Images.xcassets */; };
 		4CC469351A4A87270071E984 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC469331A4A87270071E984 /* LaunchScreen.xib */; };
 		4CC469411A4A87270071E984 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC469401A4A87270071E984 /* CounterTests.swift */; };
+		4CFB100E1A5603A000E9F816 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFB100D1A5603A000E9F816 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		4CC469251A4A87270071E984 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC469291A4A87270071E984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CC4692A1A4A87270071E984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CC4692C1A4A87270071E984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CC4692A1A4A87270071E984 /* MHAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAppDelegate.swift; sourceTree = "<group>"; };
+		4CC4692C1A4A87270071E984 /* MHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHViewController.swift; sourceTree = "<group>"; };
 		4CC4692F1A4A87270071E984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CC469311A4A87270071E984 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CC469341A4A87270071E984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4CC4693A1A4A87270071E984 /* CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC4693F1A4A87270071E984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC469401A4A87270071E984 /* CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTests.swift; sourceTree = "<group>"; };
+		4CC4694A1A4B30460071E984 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		4CFB100D1A5603A000E9F816 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFB100E1A5603A000E9F816 /* Security.framework in Frameworks */,
+				4CA85F171A4CA3AE0014848C /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		4CC4691C1A4A87270071E984 = {
 			isa = PBXGroup;
 			children = (
+				4CFB100D1A5603A000E9F816 /* Security.framework */,
+				4CC4694A1A4B30460071E984 /* iAd.framework */,
 				4CC469271A4A87270071E984 /* Counter */,
 				4CC4693D1A4A87270071E984 /* CounterTests */,
 				4CC469261A4A87270071E984 /* Products */,
@@ -77,8 +85,8 @@
 		4CC469271A4A87270071E984 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				4CC4692A1A4A87270071E984 /* AppDelegate.swift */,
-				4CC4692C1A4A87270071E984 /* ViewController.swift */,
+				4CC4692A1A4A87270071E984 /* MHAppDelegate.swift */,
+				4CC4692C1A4A87270071E984 /* MHViewController.swift */,
 				4CC4692E1A4A87270071E984 /* Main.storyboard */,
 				4CC469311A4A87270071E984 /* Images.xcassets */,
 				4CC469331A4A87270071E984 /* LaunchScreen.xib */,
@@ -156,11 +164,13 @@
 		4CC4691D1A4A87270071E984 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MH;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Michael Hulet";
 				TargetAttributes = {
 					4CC469241A4A87270071E984 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = K3ZLWH83BT;
 					};
 					4CC469391A4A87270071E984 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,8 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CC4692D1A4A87270071E984 /* ViewController.swift in Sources */,
-				4CC4692B1A4A87270071E984 /* AppDelegate.swift in Sources */,
+				4CC4692D1A4A87270071E984 /* MHViewController.swift in Sources */,
+				4CC4692B1A4A87270071E984 /* MHAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +419,7 @@
 				4CC469461A4A87270071E984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CC469471A4A87270071E984 /* Build configuration list for PBXNativeTarget "CounterTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				4CC469491A4A87270071E984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
