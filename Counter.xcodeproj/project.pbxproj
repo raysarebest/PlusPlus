@@ -14,7 +14,6 @@
 		4CC469321A4A87270071E984 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC469311A4A87270071E984 /* Images.xcassets */; };
 		4CC469351A4A87270071E984 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC469331A4A87270071E984 /* LaunchScreen.xib */; };
 		4CC469411A4A87270071E984 /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC469401A4A87270071E984 /* CounterTests.swift */; };
-		4CFB100E1A5603A000E9F816 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFB100D1A5603A000E9F816 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFB100E1A5603A000E9F816 /* Security.framework in Frameworks */,
 				4CA85F171A4CA3AE0014848C /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

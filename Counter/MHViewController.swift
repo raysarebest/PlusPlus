@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import Security
 import iAd
 class MHViewController: UIViewController {
     let cache = NSUserDefaults.standardUserDefaults()
