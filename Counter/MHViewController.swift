@@ -14,6 +14,7 @@ class MHViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var lockButton: UIButton!
     @IBAction func adjustCount(){
         if stepper!.value == 0{
             resetButton!.hidden = true
@@ -34,6 +35,14 @@ class MHViewController: UIViewController {
                 self.adjustCount()
             }))
             presentViewController(prompt, animated: true, completion: nil)
+        }
+    }
+    @IBAction func toggleLock(){
+        if(lockButton!.imageView!.image!.imageAsset! == UIImage(named: "lock")!.imageAsset!){
+            lockButton!.setImage(UIImage(named: "unlock")!, forState: .Normal)
+        }
+        else{
+            lockButton!.setImage(UIImage(named: "lock")!, forState: .Normal)
         }
     }
     override func viewDidLoad(){
